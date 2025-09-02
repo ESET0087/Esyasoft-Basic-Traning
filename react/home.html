@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            My first web
+        </title>
+    </head>
+    <body>
+        <!-- styling -->
+        <h1 style="color: red; text-decoration:underline;">Welcome </h1>
+        <h1 id="heading2"> Welcome Again! </h1>
+
+        <!-- navigation -->
+        <a href="about.html"> About</a>
+        
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident sequi, minima asperiores repellendus beatae pariatur esse ipsa assumenda dolor corporis reiciendis et sed nihil odio eum saepe nulla dolorem molestias.</p>
+        
+        <button onclick="showName()">Click</button>
+
+        <!-- javascript -->
+        <script>
+            function showName(){
+                const name = prompt("enter your name");
+                console.log(name);
+
+                // DOM Manipulation
+                document.querySelector("h1").innerText = `Welcome ` + name;
+                document.querySelector("h1").style.color = "blue";
+            }
+
+            document.getElementById("heading2").style.color = "green";
+        </script>
+    </body>
+</html>
