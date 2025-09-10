@@ -5,7 +5,7 @@ inner join books b on b.product_id = o.product_id
 inner join users u on o.user_id = u.user_id
 
 -- 2. find count of all order
-select count(*) from orders
+select count(*) as number_of_orders from orders
 
 -- 3. find particular users who ordered these books
 select u.name, b.title
@@ -42,7 +42,6 @@ having sum(b.price) = (
         group by o2.user_id
     ) user_totals
 )
-order by total_price desc;
 
 -- 7. find range of books from high to low
 select * from books order by price desc
