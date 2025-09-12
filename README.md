@@ -1,9 +1,11 @@
 # Esyasoft-Basic-Traning
 
-# Embedded Systems
+## Basics of Embedded Systems
 
-# React
+## Understanding React
   
-# SSMS
+## Basics of MSSQL
 
-# Python
+## Basics of Python
+
+## Basics of .Net
