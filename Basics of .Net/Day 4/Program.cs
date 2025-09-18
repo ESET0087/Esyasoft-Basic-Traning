@@ -89,6 +89,19 @@ namespace DS_demo
             (int id, string name, int marks) person = (first.id, first.name, first.marks);
             Console.WriteLine($"Name: {person.name}");  
             Console.WriteLine($"Marks: {person.marks}");
+
+            // List of Dictionary
+            Console.WriteLine("\nList of Dictionaries demo");
+            List<Dictionary<string, Student>> list_of_dict = new List<Dictionary<string, Student>>();
+            list_of_dict.Add(students_dict);
+
+            foreach (var dict in list_of_dict)
+            {
+                foreach (var entry in dict)
+                {
+                    Console.WriteLine($"Key: {entry.Key}, Value: {entry.Value.name}");
+                }
+            }
         }
     }
 }
