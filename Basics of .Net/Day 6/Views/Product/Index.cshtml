@@ -1,0 +1,27 @@
+﻿@using Day_6.Models
+@model List<Product>
+
+<h2>Product List</h2>
+<hr />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id">View Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

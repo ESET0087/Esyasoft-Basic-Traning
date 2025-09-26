@@ -1,0 +1,24 @@
+﻿@using Day_6.Models
+@model Product
+
+<h2>Product Details</h2>
+<hr />
+
+<div>
+    <h4>@Html.DisplayFor(model => model.Name)</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">ID:</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.Id)</dd>
+
+        <dt class="col-sm-3">Description:</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.Description)</dd>
+
+        <dt class="col-sm-3">Price:</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.Price)</dd>
+    </dl>
+</div>
+<br />
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
